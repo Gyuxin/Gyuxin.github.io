@@ -1,47 +1,71 @@
-html, body{
-  width:100%
+.icon{
+
+  position: absolute;
+}
+#lt{
+
+  left:0;
+  top:0;
+}
+#rt{
+  right:0;
+  top:0;
+}
+#lb{
+  left:0;
+  bottom:0;
+  height:65px;
+  width: 65px;
+  background-color: black;
+}
+#rb{
+  right:0;
+  bottom:0;
+  height:65px;
+  width: 65px;
+  background-color: black;
 }
 body{
-  font-family:"PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size:16pt;
-  color:#455565
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom: 0;
 }
 h1{
-  font-family:'Gentium Book Basic', serif
-}
-#quote{
-  font-family:'Gentium Basic', serif
-}
-h1, h2{
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight:bold;
+  text-align:left;
+  font-size:25pt;
+  margin-bottom:20px;
   color:#000
 }
-h1{
-  font-weight:bold;
-  text-align:center;
-  font-size:45pt;
-  margin-top:72px;
-  margin-bottom:50px
-}
-h2{
-  font-size:20pt;
-  font-weight:bold
-}
-#bar{
-  background-color:#CC9999;
-  height:10px;
-  width:100%
-}
 #body{
-  width:750px;
-  margin:0px auto
-}
-#homeWrapper{
-  width:590px;
-  margin:0px auto
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  right: 50%;
+  width:37%;
+  margin:0px auto;
 }
 #info{
-  margin-bottom:40px
+  font-size:10pt;
+  font-family:"Courier New", Courier, monospace;
   }
+#quote{
+  font-family:'Gentium Basic', serif;
+  font-size:8pt;
+  color: #5e5e5e;
+}
+
+#homeWrapper{
+  /* width:590px;
+  margin:0px auto; */
+}
+
 a{
   color:#CC9999
   }
@@ -76,7 +100,7 @@ a:hover{
 #quote{
   font-style:italic;
   margin:14px 0 0 0;
-  font-size:14pt;
+  font-size:10pt;
   margin-bottom:30px
 }
 h1.post{
@@ -92,9 +116,9 @@ h1.post{
   }
 pre{
   text-align:left;
-  font-size:12pt
+  font-size:10pt
 }
-@media only screen and (min-width:768px){
+ @media only screen and (min-width:768px){
   .mobile
   {
     display:none
@@ -104,7 +128,7 @@ pre{
   #body{
     width:calc(100% - 40px);
     padding:0px 20px;
-    text-align:center;
+    text-align:left;
     font-size:16pt
     }
   #homeWrapper{
@@ -112,7 +136,7 @@ pre{
   }
   h1{
     width:100%;
-    text-align:center;
+    text-align:left;
     margin:35px 0 16px
     }
   .desktop{
